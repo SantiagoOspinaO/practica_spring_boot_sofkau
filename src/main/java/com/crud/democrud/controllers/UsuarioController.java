@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Optional;
+
 @CrossOrigin
 @RestController
 @RequestMapping("/usuario")
@@ -21,6 +22,12 @@ public class UsuarioController {
 
     @PostMapping()
     public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuario) {
+        return this.usuarioService.guardarUsuario(usuario);
+    }
+
+    @PutMapping(path = "/{id}")
+    public UsuarioModel updateUser(@RequestBody UsuarioModel usuario,@PathVariable("id") Long id) {
+        usuario.setId(id);
         return this.usuarioService.guardarUsuario(usuario);
     }
 
