@@ -1,5 +1,6 @@
 package com.crud.democrud.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,8 +17,8 @@ public class UsuarioRolModel {
 
     private String rol;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "usu_id", nullable = false)
+    @ManyToOne()
+    @JoinColumn(name = "usu_id", referencedColumnName = "id")
     private UsuarioModel usuarioModel;
 
     public UsuarioRolModel() {
