@@ -9,5 +9,4 @@ class DemocrudApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
