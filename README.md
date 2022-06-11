@@ -6,10 +6,10 @@ Se utiliza la relación de uno a mucho, porque un rol puede tener muchos usuario
 común la relación de uno a muchos, por esto se selecciona esa relación.
 
 **GET roles**  
-![image](https://user-images.githubusercontent.com/42284502/172765099-9b510dff-5d2d-4525-82c6-bf713224a072.png)
+<img src="https://github.com/SantiagoOspinaO/practica_spring_boot_sofkau/blob/master/src/main/java/com/crud/democrud/images/get%20roles.png" />
 
 **POST roles**  
-![image](https://user-images.githubusercontent.com/42284502/172765476-2c0f10e9-84fa-4d9c-aac1-8add35368823.png)
+<img src="https://github.com/SantiagoOspinaO/practica_spring_boot_sofkau/blob/master/src/main/java/com/crud/democrud/images/post%20roles.png"/>
 
 
 
